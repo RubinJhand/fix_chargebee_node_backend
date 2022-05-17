@@ -1,1 +1,1 @@
-export { PORT, NODE_ENV } from './common';
+export { PORT, NODE_ENV, API_URL } from './common';
