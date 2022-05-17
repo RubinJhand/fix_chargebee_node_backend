@@ -7,7 +7,7 @@
 ### To run in development mode (nodemon):
 ```npm run dev```
 
-### To run:
+### To build and run:
 ```npm run start```
 
 ### Routes:
