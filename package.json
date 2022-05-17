@@ -2,9 +2,10 @@
   "name": "fix_chargebee_node_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon -L src/server.js --exec babel-node"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,9 @@
   "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@babel/core": "^7.17.12",
+    "@babel/node": "^7.17.10",
     "@babel/preset-env": "^7.17.12",
+    "dotenv": "^16.0.1",
     "nodemon": "^2.0.16"
   }
 }
