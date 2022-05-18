@@ -4,6 +4,6 @@ import { getBillingPaymentIntent } from '../controllers';
 
 const router = Router();
 
-router.get('/billing', getBillingPaymentIntent);
+router.get('/billing/details/payment/generate', getBillingPaymentIntent);
 
 export default router;

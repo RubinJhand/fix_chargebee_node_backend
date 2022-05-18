@@ -6,6 +6,6 @@ export const billingPaymentIntent = async () => {
 
 		return response;
 	} catch (error) {
-		console.log(error);
+		return error
 	}
 };

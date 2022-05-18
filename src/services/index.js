@@ -1,1 +1,2 @@
-export { billingPaymentIntent } from './billingPaymentIntent.services';
+export { billingPaymentIntent } from './billingPaymentIntent';
+export { chargebeePaymentIntent } from './chargebeePaymentIntent';

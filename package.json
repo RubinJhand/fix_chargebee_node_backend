@@ -20,6 +20,7 @@
   "homepage": "https://github.com/RubinJhand/fix_chargebee_node_backend#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "chargebee": "^2.11.0",
     "cors": "^2.8.5",
     "express": "^4.18.1"
   },
