@@ -9,7 +9,14 @@ API_KEY=
 SITE_NAME=
 GATEWAY_ID=
 ```
-
+### If your originating local environment is not from:
+```
+https://localhost:3000
+```
+#### In .env file, change the value of:
+```
+CORS_ORIGIN=
+```
 ## Available Scripts
 
 ### In the project directory run:
@@ -31,13 +38,13 @@ npm run start
 ### Routes
 #### GET:
 ```
-http://localhost:5000/billing/details/payment/generate
+https://localhost:5000/billing/details/payment/generate
 ```
 
 ### Test route to check is Node/Express server is running
 #### GET:
 ```
-http://localhost:5000
+https://localhost:5000
 ```
 
 ### Able to make an API call to:

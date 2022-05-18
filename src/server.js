@@ -1,9 +1,9 @@
-import { createServer } from 'http';
+import { createServer } from 'https';
 
-import { app } from './config';
+import { app, serverOptions } from './config';
 import { PORT } from './constants';
 
-const server = createServer(app);
+const server = createServer(serverOptions, app);
 
 server.listen(PORT, (error) => {
 	if (error) {

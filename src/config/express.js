@@ -16,7 +16,7 @@ app.use(urlencoded({ extended: true }));
 app.use(billingPaymentIntent);
 
 app.get('/', (req, res) => {
-  res.json({data: 'Hello World!'});
+	res.json({ data: 'Hello World!' });
 });
 
 export default app;

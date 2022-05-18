@@ -1,7 +1,7 @@
 import ENV from "../utils/env";
 
 const CORS_CONFIG = {
-  origin: ENV.CORS_URL,
+  origin: ENV.CORS_ORIGIN,
   methods: "GET",
   allowedHeaders: "Content-Type, Authorization",
   credentials: false,
