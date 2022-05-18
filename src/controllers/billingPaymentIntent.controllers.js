@@ -12,7 +12,12 @@ export const getBillingPaymentIntent = async (req, res) => {
 			currency_code: 'CAD',
 		});
 
-		
+		if (response.http_status_code) {
+			return res
+				.status(response.http_status_code)
+				.json(`${response.message}`);
+		}
+
 		return res.json({ ...response });
 		// return res.json({ dataLocal: response2.data, dataChargebee: ...response });
 	} catch (error) {
