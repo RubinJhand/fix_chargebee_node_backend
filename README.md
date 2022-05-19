@@ -19,13 +19,15 @@ CORS_ORIGIN=
 ```
 ## Available Scripts
 
-### In the project directory run:
-#### Installs all the required dependencies.
+### Install required dependencies.
  ```
  npm i
  ```
 
 ### To run in development mode (nodemon):
+*Note: The combination of* ```babel``` *and* ```nodemon``` *may prevent* ```nodemon``` *from auto-restarting the server on some Windows computers.*
+*In this case, build and run using the instruction below.* 
+
 ```
 npm run dev
 ```
@@ -35,34 +37,27 @@ npm run dev
 npm run start
 ```
 
-### Routes
-#### GET:
-```
-https://localhost:5000/billing/details/payment/generate
-```
+## Routes
+- Test route to check is Node/Express server is running: 
+	<http://localhost:5000>
+	 
 
-### Test route to check is Node/Express server is running
-#### GET:
-```
-https://localhost:5000
-```
+- Generates a payment intent: 
+ 	<http://localhost:5000/billing/details/payment/generate>
 
-### Able to make an API call to:
-```http://localhost:8080/dashboard/api``` 
-### and ```chargebee```
 
-#### Returns this response:
-```
-{
-	id:,
-	status: ,
-	gateway: ,
-	currencyCode: ,
-	modifiedAt: ,
-	createdAt:,
-	expiresAt: ,
-	gatewayAccountId: ,
-	amount: ,
-	paymentMethodType: 
-}
-```
+	-  Returns this response:
+		```
+		{
+			id:,
+			status: ,
+			gateway: ,
+			currencyCode: ,
+			modifiedAt: ,
+			createdAt:,
+			expiresAt: ,
+			gatewayAccountId: ,
+			amount: ,
+			paymentMethodType: 
+		}
+		```
